@@ -162,6 +162,9 @@ class PageController extends Controller
     // Profile View
     public function showProfile(Request $request)
     {
-        return view('profile');
+        $username = $request->query('username');
+        $password = $request->query('password');
+
+        return view('profile', ['username' => $username]);
     }
 }

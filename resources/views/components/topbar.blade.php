@@ -1,3 +1,7 @@
+@php
+    $username = request()->query('username');
+@endphp
+
 @vite('resources/js/dropdown-profile.js')
 <header class="bg-white shadow px-10 py-6    flex justify-between items-center w-full">
     <div>
@@ -13,12 +17,12 @@
         </button>
 
         {{-- Dropdown Menu --}}
-        <div id="profileDropdownMenu" class="hidden absolute right-0 mt-5 w-48 rounded-2xl bg-white shadow-lg z-50">            
-            <div class="flex flex-col gap-2 p-2">
-                <a href="{{ route('profile') }}" class="block p-3 rounded-2xl text-sm text-gray-800 hover:bg-gray-100 cursor-pointer transition ease-in-out duration-200">Profile</a>
+        <div id="profileDropdownMenu" class="hidden absolute right-0 mt-5 w-54 rounded-2xl bg-white shadow-lg z-50">            
+            <div class="flex flex-col gap-2 p-5">
+                <a onclick="window.location='{{ route('profile', ['username' => $username]) }}'" class="block p-3 rounded-2xl text-[1rem] text-gray-800 hover:bg-gray-100 hover:shadow-xs cursor-pointer transition ease-in-out duration-200">Profile</a>
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <button type="submit" class="w-full text-left p-3 rounded-2xl text-sm text-gray-800 hover:bg-gray-100 cursor-pointer transition ease-in-out duration-200">Logout</button>
+                    <button type="submit" class="w-full text-left p-3 rounded-2xl text-[1rem] text-gray-800 hover:bg-gray-100 hover:shadow-xs cursor-pointer transition ease-in-out duration-200">Logout</button>
                 </form>
             </div>
         </div>
