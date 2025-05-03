@@ -79,3 +79,9 @@ di pengelolaan.blade.php
     ...
 @endsection
 ```
+
+### Tampilan Dashboard
+![image](https://github.com/user-attachments/assets/62942944-de29-4e67-a06c-ce214bb186c7)
+
+### Tampilan Homepage
+![image](https://github.com/user-attachments/assets/e6521760-0ab4-4d5e-a637-8f7cb068c949)
