@@ -16,14 +16,10 @@
             </svg>
         </button>
 
-        {{-- Dropdown Menu --}}
         <div id="profileDropdownMenu" class="hidden absolute right-0 mt-5 w-54 rounded-2xl bg-white shadow-lg z-50">            
             <div class="flex flex-col gap-2 p-5">
                 <a onclick="window.location='{{ route('profile', ['username' => $username]) }}'" class="block p-3 rounded-2xl text-[1rem] text-gray-800 hover:bg-gray-100 hover:shadow-xs cursor-pointer transition ease-in-out duration-200">Profile</a>
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-                    <button type="submit" class="w-full text-left p-3 rounded-2xl text-[1rem] text-gray-800 hover:bg-gray-100 hover:shadow-xs cursor-pointer transition ease-in-out duration-200">Logout</button>
-                </form>
+                <a onclick="window.location='{{ route('logout')}}'" class="block p-3 rounded-2xl text-[1rem] text-gray-800 hover:bg-gray-100 hover:shadow-xs cursor-pointer transition ease-in-out duration-200">Logout</a>
             </div>
         </div>
     </div>

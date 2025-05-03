@@ -4,7 +4,7 @@
 @section('content')
     <div class="p-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-            <div class="bg-black text-white rounded-xl shadow p-6">
+            <div class="bg-gradient-to-t from-gray-800 to-purple-600 text-white rounded-xl shadow p-6">
                 <div class="flex items-center gap-4">
                     <div class="bg-white p-3 rounded-full">
                         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135673.png" alt="Icons" class="w-5 h-5 ">

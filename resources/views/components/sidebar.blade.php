@@ -18,16 +18,5 @@
             <img src="https://cdn-icons-png.flaticon.com/512/9485/9485721.png" alt="Logo" class="w-5 h-5">
             <span class="text-gray-700">Category</span>
         </li>
-    </ul>
-    <div class="flex flex-col gap-5 mt-auto px-4 py-5">
-        <h2 class="p-2">Logout</h2>
-        <li onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="flex items-center gap-3 hover:bg-[#F0F0F0] rounded-md p-2 cursor-pointer">
-            <img src="https://cdn-icons-png.flaticon.com/512/1286/1286853.png" alt="Logo" class="w-5 h-5">
-            <span class="text-gray-700">Logout</span>
-        </li>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            @csrf
-            @method('POST')
-        </form>
-    </div>
+    </ul>    
 </nav>

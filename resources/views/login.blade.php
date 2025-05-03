@@ -11,7 +11,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])   
     </head>
     <body class="min-h-screen flex font-poppins">
-        <div class="w-1/2 flex flex-col justify-center items-center">    
+        <div class="flex md:w-1/2 mx-auto flex-col justify-center items-center">    
             <div class="flex items-center mb-8 bg-white">
                 <h1 class="text-3xl font-bold">Eventify</h1>
             </div>    
@@ -26,12 +26,12 @@
                     <label for="password" class="block text-gray-700 opacity-70 text-md">Password</label>
                     <input type="password" id="password" name="password" placeholder="@#$/" class="w-full border mt-4 border-gray-300 rounded text-md px-3 py-2" required>
                 </div>
-                <button type="submit" class="w-full bg-black text-white px-4 py-3 rounded-2xl cursor-pointer hover:opacity-80 shadow-2xl transition ease-in-out duration-300">Sign In</button>
+                <button type="submit" class="w-full bg-purple-900 text-white px-4 py-3 rounded-2xl cursor-pointer hover:opacity-80 shadow-2xl transition ease-in-out duration-300">Sign In</button>
             </form>
         </div>
     
         <!-- Kanan: Info Menarik -->
-        <div class="w-1/2 flex items-center justify-center bg-black p-8">
+        <div class="hidden w-1/2 md:flex items-center justify-center bg-gradient-to-t from-gray-800 to-purple-600 p-8">
             <div class="text-center">
                 <h2 class="text-7xl font-bold text-gray-300 mb-4 leading-tight">Selamat Datang di Eventify!</h2>                
             </div>

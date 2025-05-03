@@ -19,7 +19,7 @@
                     @foreach ($categories as $category)
                         <tr class="border-b border-gray-100 hover:bg-gray-50 transition ease-in-out duration-150">
                             @foreach ($category as $value)
-                                <td class="px-6 py-4 w-full">{{ $value }}</td>
+                                <td class="px-6 py-4 block">{{ $value }}</td>
                             @endforeach
                         </tr>
                     @endforeach

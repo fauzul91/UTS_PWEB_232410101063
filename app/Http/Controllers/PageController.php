@@ -20,7 +20,7 @@ class PageController extends Controller
         return redirect()->route('dashboard', ['username' => $username]);
     }
 
-    public function logout(Request $request)
+    public function logout()
     {
         return redirect()->route('home');
     }
@@ -120,7 +120,7 @@ class PageController extends Controller
                 'date' => '2025-05-15',
                 'time' => '13:00 - 15:00',
                 'description' => 'Bootcamp Full Stack bersama Sal Priadi.',
-            ],
+            ],         
             [
                 'thumbnail' => 'https://i.scdn.co/image/ab6765630000ba8ae8689a04d087d447352289b1',
                 'title' => 'Ngopi & Musik Santai',
@@ -138,7 +138,16 @@ class PageController extends Controller
                 'date' => '2025-05-18',
                 'time' => '19:00 - 22:00',
                 'description' => 'Meetup santai komunitas pecinta kopi se-India.',
-            ],                   
+            ],       
+            [
+                'thumbnail' => 'https://static-cse.canva.com/blob/1412644/1.BluePinkCreativeBusinessPitchDeckPresentation.jpg',
+                'title' => 'Pitch Deck Day',
+                'category' => 'Meetup',
+                'location' => 'Co-Working Space XYZ',
+                'date' => '2025-05-20',
+                'time' => '07:00 - 15:00',
+                'description' => 'Pitch Deck Day With Top Quality Mentor.',
+            ],            
         ];
 
         return view('pengelolaan', ['events' => $events, 'username' => $username]);
