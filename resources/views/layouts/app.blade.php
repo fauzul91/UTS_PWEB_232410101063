@@ -13,6 +13,6 @@
     <body class="font-poppins">
         @include('components.navbar')
         @yield('content')
-        @include('components.footer')
+        <x-footer></x-footer>
     </body>
 </html>

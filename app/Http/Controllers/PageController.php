@@ -11,7 +11,6 @@ class PageController extends Controller
     {
         return view('login');
     }
-
     public function login(Request $request)
     {
         $username = $request->input('username');
@@ -19,7 +18,6 @@ class PageController extends Controller
 
         return redirect()->route('dashboard', ['username' => $username]);
     }
-
     public function logout()
     {
         return redirect()->route('home');
@@ -32,7 +30,8 @@ class PageController extends Controller
     // Dashboard View
     public function showDashboard()
     {  
-        $topEvents = [
+        $topEvents = 
+        [
             [
                 'thumbnail' => 'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/party-music-beach-sunset-youtube-thumbnail-design-template-2ee3ca06baa1189a6c1d4bbb596c68b5_screen.jpg?ts=1600839157', // bisa juga pakai asset('images/event1.jpg')
                 'title' => 'Acoustic Vibes',
@@ -53,7 +52,8 @@ class PageController extends Controller
             ],
         ];
 
-        $transactions = [
+        $transactions = 
+        [
             [
                 'name' => 'Fauzul Akbar',
                 'time' => '20 menit lalu',
@@ -93,7 +93,8 @@ class PageController extends Controller
     {
         $username = $request->query('username');
 
-        $events = [
+        $events = 
+        [
             [
                 'thumbnail' => 'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/party-music-beach-sunset-youtube-thumbnail-design-template-2ee3ca06baa1189a6c1d4bbb596c68b5_screen.jpg?ts=1600839157',
                 'title' => 'Acoustic Vibes',
@@ -157,7 +158,8 @@ class PageController extends Controller
     {
         $username = $request->query('username');
 
-        $categories = [
+        $categories = 
+        [
             ['name' => 'Musik'],           
             ['name' => 'Workshop'],           
             ['name' => 'Pelatihan Online'],           
