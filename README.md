@@ -51,7 +51,7 @@ http://127.0.0.1:8000/dashboard?username=Fauzulz
 - ├── pengelolaan.blade.php
 - ├── login.blade.php
 - ├── profile.blade.php
-- public/
+- resources/
 - └── css, js
 
 ### Blade Layout Master 
