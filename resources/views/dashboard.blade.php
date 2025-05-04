@@ -62,7 +62,7 @@
                                                 <td class="p-4">
                                                     <img src="{{ $value }}" alt="{{ $topEvent['title'] }}"
                                                         class="w-24 h-16 object-cover rounded">
-                                                </td>
+                                                </td>   
                                             @else
                                                 <td class="p-4">{{ $value }}</td>
                                             @endif
@@ -74,8 +74,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Kolom 1/3 -->
             <div class="bg-white rounded-xl shadow p-3">
                 <p class="text-gray-800 text-xl font-bold ml-4">Recent Sales</p>
                 <div class="flex flex-col p-5 gap-5">
@@ -94,7 +92,6 @@
                         </div>
                     @endforeach
                 </div>
-                <!-- Konten 1/3 di sini -->
             </div>
         </div>
     </div>
